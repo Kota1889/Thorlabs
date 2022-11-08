@@ -2,10 +2,13 @@ DESCRIPTION = """PER measurement using Thorlabs Power meter and Half-wave plate 
 
 Example
 -------
+# Optical setup
+    Half-wave plate with KBD101 mount > Polarization beam splitter > Power meter PM101
 # Preparation
     1. pip install pythonnet
     2. download Thorlabs software for Optical Power Meter and Rotation mount (KINESIS)
     3. create folder with PERmeasurement_Thorlabs.py, TLPM.py, TLPM_64.dll
+    4. run the below command
 
 # Run the data logging program in terminal
 python PERmeasurement_Thorlabs.py -ss 180 -mv 30 -int 3 -cw 1064
@@ -16,6 +19,7 @@ Resource2: https://www.youtube.com/watch?v=VbcCDI6Z6go&list=LL&index=1&t=600s
 
 - Author :Kota Koike
 - First draft : 2022/11/07
+- Update : 2022/11/08
 """
 import os
 import time
